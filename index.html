@@ -1,70 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background-color: #333;
-        color: white;
-        padding: 10px 0;
-      }
-
-      nav {
-        display: flex;
-        justify-content: center;
-      }
-
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      nav ul li {
-        display: inline-block;
-        margin: 0 15px;
-      }
-
-      nav ul li:hover {
-        text-decoration: underline;
-      }
-      nav ul li img {
-        width: 50px;
-        height: 50px;
-        vertical-align: middle;
-      }
-      
-    </style>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-      <nav id="nav">
-        <ul>
-          <li>
-            <img src="https://cdn-icons-png.flaticon.com/512/330/330705.png" />
-          </li>
-
-          <li>Home</li>
-          <li>Create Notes</li>
-          <li>View Notes</li>
-          <li>Settings</li>
-        </ul>
-      </nav>
+        <h1>Student Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#settings">Settings</a> </li>
+            </ul>       
     </header>
+    <br><br>
 
-    <section></section>
+<action="">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+<label for="age">Age:</label>
+<input type="text" id="age" name="age" required><br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br><br>
+<label for="course">Course:</label>
+<select id="course" name="course" required>
+<option value="course1">Course 1</option>
+<option value="course2">Course 2</option>
+<option value="course3">Course 3</option>
+</select>
+<br><br>
+<label for="Gender" id="Gender" required>Gender:</label> 
+<input type ="radio" id="male" >
 
-    <article></article>
-
-    <aside></aside>
-
-    <footer></footer>
-  </body>
+<input type="submit" value="Submit">
+    </form>
+</body>
 </html>
